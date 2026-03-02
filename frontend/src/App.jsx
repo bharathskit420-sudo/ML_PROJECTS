@@ -34,7 +34,7 @@ function App() {
   const fetchPrediction = async () => {
     try {
       const response = await axios.get(
-        `http://127.0.0.1:5000/predict/${studentId}`
+        `https://ml-projects-sxuh.onrender.com/predict/${studentId}`
       );
       setData(response.data);
     } catch (error) {
@@ -45,7 +45,7 @@ function App() {
   // 🔹 Add Student
   const handleAddStudent = async () => {
     try {
-      await axios.post("http://127.0.0.1:5000/add-student", {
+      await axios.post("https://ml-projects-sxuh.onrender.com/add-student", {
         student_id: formData.student_id,
         student_name: formData.student_name,
         scores: formData.scores.split(",").map(Number)
