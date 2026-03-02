@@ -1,0 +1,6 @@
+package-lock.json
+package-lock
+node_modules
+frontend/node_modules
+backend/venv
+backend/pycache
